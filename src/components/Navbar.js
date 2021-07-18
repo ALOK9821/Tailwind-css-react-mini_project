@@ -11,7 +11,7 @@ const Navbar = () => {
            </div>
            <div className="mr-20  md:block hidden">
                <Link className="p-3 mx-2 transition duration-300 ease-in-out hover:bg-purple-200 hover:border-2 shadow-sm hover:shadow-lg rounded-lg transform hover:-translate-y-1 hover:scale-110 ..." to="/">Home</Link>
-               <Link className="p-3 mx-2 transition duration-300 ease-in-out  hover:bg-pink-200 hover:border-2 shadow-sm hover:shadow-lg rounded-lg transform hover:-translate-y-1 hover:scale-110 ... " to="/menu">Menu</Link>
+               <Link className="p-3 mx-2 transition duration-300 ease-in-out  hover:bg-pink-200 hover:border-2 shadow-sm hover:shadow-lg rounded-lg transform hover:-translate-y-1 hover:scale-110 ... " to="/grid">Grid</Link>
                <Link className="p-3 mx-2 transition duration-300 ease-in-out hover:bg-blue-200 hover:border-2 shadow-sm hover:shadow-lg rounded-lg transform hover:-translate-y-1 hover:scale-110 ..." to="/about">About</Link>
                <Link className="p-3 mx-2 transition duration-300 ease-in-out hover:bg-yellow-200 hover:border-2 shadow-sm hover:shadow-lg rounded-lg transform hover:-translate-y-1 hover:scale-110 ..." to="/Tipcal">Tip calculator</Link>
            </div>

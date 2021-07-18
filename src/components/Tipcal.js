@@ -6,7 +6,7 @@ const Tipcal = () => {
     const [Tbill,setTbill]=useState("0")
     const [Bill, setBill]=useState(0);
     const [Tip,setTip]=useState(0);
-    const [People,setPeople]=useState(0);
+    const [People,setPeople]=useState(1);
     useEffect(()=>{
         setTotal((Number(Bill) + Number(((Tip*Bill)/100).toFixed(2))).toFixed(2))
     },[Bill,Tip,People])
@@ -64,7 +64,7 @@ const Tipcal = () => {
                        <div className="flex justify-between ">Number Of People  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div>
                        <div className="flex justify-end">
                           
-                           <input type="text" placeholder="0" className="bg-blue-100 w-1/3 outline-none ml-2 text-center font-bold rounded-lg" value={People} onChange={handlePeople} />
+                           <input type="text" placeholder="1" className="bg-blue-100 w-1/3 outline-none ml-2 text-center font-bold rounded-lg" value={People} onChange={handlePeople} />
                         </div>
                    </div>
                </div>
@@ -102,7 +102,7 @@ const Tipcal = () => {
                        <button className=" bg-white rounded-lg border-2 w-full font-bold hover:bg-blue-100 hover:text-indigo-800" onClick={()=>{
                            setBill(0);
                            setTip(0);
-                           setPeople(0);
+                           setPeople(1);
                        }}>RESET</button>
                 </div>
             </div>
