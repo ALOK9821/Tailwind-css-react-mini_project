@@ -29,23 +29,23 @@ const Tipcal = () => {
     }
     return (
        <div className="bg-blue-100  flex flex-col justify-center items-center h-screen w-100">
-           <h1 className="font-extrabold text-indigo-800 text-3xl mb-5 font-serif">BILL/TIP CALCULATOR </h1>
-           <div className="bg-white lg:p-5 lg:flex lg:flex-row sm:flex-col lg:justify-center lg:items-center lg:h-96 rounded-3xl lg:w-1/2 sm:w-4/5 lg:shadow-xl">
+           <h1 className="font-extrabold text-indigo-800 text-3xl mb-5 font-serif">BILL/TIP  CALCULATOR </h1>
+           <div className="bg-white lg:p-5 sm:p-2 lg:flex lg:flex-row sm:flex-col lg:justify-center lg:items-center lg:h-96 rounded-3xl lg:w-1/2 sm:w-4/5 lg:shadow-xl">
                
                
                {/* left side div */}
-               <div className="h-full w-full rounded-xl m-1 flex flex-col justify-between items-center font-bold font-serif">
+               <div className="lg:h-full w-full rounded-xl lg:m-1 flex flex-col justify-between items-center font-bold font-serif">
 
 
                    {/* bill input box */}
                    <div className="border-2 rounded-xl h-20  w-full flex flex-col justify-evenly p-2 lg:shadow-md"> 
-                      <div className="h-2/6 flex justify-between ">BILL <span><svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 8h6m-5 0a3 3 0 110 6H9l3 3m-3-6h6m6 1a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></span> </div>
+                      <div className="lg:h-2/6 flex justify-between ">BILL <span><svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 8h6m-5 0a3 3 0 110 6H9l3 3m-3-6h6m6 1a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></span> </div>
                       <div className="flex justify-end h-8/12"><input type="text" placeholder="0" value={Bill}  onChange={handleBill}  className="w-1/3 font-bold text-blue-800 h-full outline-none bg-indigo-100 text-center rounded-lg" /></div>
                    </div>
                    {/* end bill input box */}
 
                    <div className="border-2 w-full h-1/2 p-2  rounded-lg lg:shadow-md">
-                       <div className="ml-2  flex justify-between">  SET TIP <div className="mr-2">%</div> </div>
+                       <div className="lg:ml-2  flex justify-between">  SET TIP <div className="mr-2">%</div> </div>
                        <div className=" grid grid-cols-3 p-2 h-4/6 gap-4 text-white mt-2">
                            <div className={Tip==5?"bg-blue-100 text-indigo-800 rounded-lg":"bg-indigo-800 rounded-lg"}><button className="rounded-lg  font-bold hover:bg-blue-100 hover:text-indigo-800  w-full h-full flex justify-center items-center"
                          onClick={()=>setTip(5)}  >5 %</button></div>                          
@@ -81,9 +81,9 @@ const Tipcal = () => {
 
 
              {/* right side div */}
-            <div className="h-full w-full rounded-xl m-1 text-indigo-800 font-bold grid grid-cols-1 gap-1  lg:shadow-md font-serif">
+            <div className="lg:h-full w-full rounded-xl lg:m-1 text-indigo-800 font-bold grid grid-cols-1 gap-1  lg:shadow-md font-serif">
                 <div className="rounded-lg bg-blue-100 text-white  lg:shadow-md"> 
-                    <div className="flex h-1/2  p-5  justify-between items-center border-b-2  border-dashed border-blue-300 ">
+                    <div className="flex lg:h-1/2  p-5  justify-between items-center border-b-2  border-dashed border-blue-300 ">
                         <div className="text-2xl text-indigo-800">Tip amount <div className=" font-semibold text-sm">/person</div> </div>
                         <div className="flex justify-between text-indigo-800  w-16 items-center">
                         <span><svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 8h6m-5 0a3 3 0 110 6H9l3 3m-3-6h6m6 1a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></span>
